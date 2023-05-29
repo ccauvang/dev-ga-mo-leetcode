@@ -1,6 +1,24 @@
-let nums = [1,3,2,5];
-let target = 6;
-const numlength = nums.length;
+let nums = [1,3,2,5,4];
+let target = 5;
+let a = {};
+const numlength = nums.length
+//let i = 0;
+//loop
+for (let i = 0; i< numlength; i++) {
+  const bravo = target - nums[i];
+  // nếu trong obj đã có giá trị thì trả ra kết quả 
+  if (a[bravo] >= 0) {
+    console.log(a[bravo], i);
+    //add break để dừng loop khi bắt dc giá trị đầu tiên hoặc không để bắt hết giá trị = target
+    break;
+  } else {
+  // nếu chua có thì add vào obj key = value của array value = indexof của array
+  a[nums[i]] = i;
+  continue;
+  }
+};
+
+/*const numlength = nums.length;
 console.time('for');
 for (let x = 0; x < numlength; x++) {
   for (let i = x+1; i < numlength; i++) {
@@ -11,4 +29,5 @@ for (let x = 0; x < numlength; x++) {
    }
   }
 };
-console.timeEnd('for');
+console.timeEnd('for');*/
+
