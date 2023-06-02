@@ -1,5 +1,6 @@
 let nums = [1,3,2,5,4];
 let target = 5;
+console.time('for')
 let a = {};
 const numlength = nums.length
 //let i = 0;
@@ -17,7 +18,7 @@ for (let i = 0; i< numlength; i++) {
   continue;
   }
 };
-
+console.timeEnd('for')
 /*const numlength = nums.length;
 console.time('for');
 for (let x = 0; x < numlength; x++) {
