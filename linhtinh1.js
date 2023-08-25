@@ -104,7 +104,7 @@ console.log(x)
 }
 console.timeEnd("for")*/
 
-function tizz(str) {
+/*function tizz(str) {
   //create obj
   console.time('loop')
   let obj = {}
@@ -133,8 +133,8 @@ console.log(obj)
      S_result += A_keysobj[N_sum];
      N_sum++;
    });*/
-  //other loop
-  for (let ele = 0; ele < A_keysobj.length; ele++) {
+//other loop
+/* for (let ele = 0; ele <= A_keysobj.length; ele++) {
     S_result += A_valuesobj[ele];
     S_result += A_keysobj[ele]
   };
@@ -143,20 +143,33 @@ console.log(obj)
   return S_result
 };
 //random word
-console.time("func")
+//console.time("func")
 let wood = ["q", "w", "e", 'r', 't', 'y', 'u', 'i', 'o', 'p', "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"];
 let jol = "";
 //loop and add characters to jol 
-for (let k = 0; k < 1000000; k++) {
+for (let k = 0; k < 20; k++) {
   jol += wood[Math.floor(Math.random() * wood.length)];
 }
 
 //console.log(tizz("abhxhxuxixhcfncjjjjjjjjjjkkkkkjjjjjjjjjjjjjjjcifcabca"));
 //set jacob = tizz(jol)
+console.time('func')
 let jacob = tizz(jol)
 //call tizz(jol)
-console.log(jacob)
-console.timeEnd("func")
+const strj = 'https://youtube.com/playlist?list=PLhz0MSCyYbgIAeIspl5q_gsP2yLwA7_Fl';
+let ggh = strj.split('').reverse();
+let hhh = [];
+for(index of ggh) {
+  if (index != '=') {
+    hhh.unshift(index)
+  } else {
+    break;
+  }
+  
+};
+let jgv = strj.slice(-34);
+console.log(`https://youtube.com/playlist?list=${jgv}`)
+console.timeEnd("func")*/
 
 /*function abc(xxx) {
    let obj = {}
@@ -198,3 +211,77 @@ A_slic3.forEach(ele => {
 });
 //return
  return A_return;*/
+/*let s1 = 'they are roundx';
+let s2 = 'fold two timesx';
+
+
+s1 = s1.split(' ');
+s2 = s2.split(' ');
+//console.log(s1)
+function abvv(s1, s2) {
+if (s1.length != s2.length) {
+  return 'not the same amount of words in both strings'
+}
+let lool = true
+for (let i = 0; i < s1.length; i++) {
+  if (s1[i].length != s2[i].length) {
+    return 'vãi lồ';
+    //break;
+  } else {
+    for (let x = 0; x < s1[i].length; x++) {
+      //console.log('foo', s1[i][x], s2[i][x] );
+      if (s2[i].includes(x)) {
+        return 'foo';
+        break;
+      } else {
+        console.log('boo');
+      }
+    }
+  }
+}
+}*/
+/*let lol = {
+  a: 'a',
+  e: 'e',
+  i: 'i',
+  o: 'o',
+  u: 'u',
+  y: 'y'
+}
+let s = prompt("input");
+let s2 = '';
+for (i of s) {
+  if (i.toUpperCase() == i) {
+    if (lol[i.toLowerCase()]) {
+      s2 += 'V'
+    } else if (i == ' ') {
+      s2 += ' ';
+    } else {
+      s2 += 'C'
+    }
+  } else {
+    if (lol[i]) {
+      s2 += 'v'
+    } else {
+      s2 += 'c'
+    }
+  }
+}
+console.log(s2);*/
+let ob = {
+  count: 4,
+  1: '13 23 12',
+  2: '77 36 64',
+  3: '44 89 76',
+  4: '31 78 45'
+};
+
+
+
+for (let i = 1; i < ob.count + 1; i++) {
+  let boo = ob[i].split(' ').map(m => m)
+  
+  console.log(boo)
+  
+  
+}

@@ -8,7 +8,7 @@ const numlength = nums.length
 for (let i = 0; i< numlength; i++) {
   const bravo = target - nums[i];
   // nếu trong obj đã có giá trị thì trả ra kết quả 
-  if (a[bravo] >= 0) {
+  if (a[bravo]) {
     console.log(a[bravo], i);
     //add break để dừng loop khi bắt dc giá trị đầu tiên hoặc không để bắt hết giá trị = target
     break;
