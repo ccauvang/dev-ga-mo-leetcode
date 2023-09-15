@@ -324,3 +324,46 @@ for (let i = 1, x = 0, y = 0; i < ob.count + 1; i++) {
 console.log(sum);
 //done
 */
+
+/*let a = 'https://youtu.be/284XKh1lFHM?si=lX902TMEk8JAhaSi';
+
+console.log(a.slice(17, -20), -48 + a.indexOf('?si='));*/
+
+/**/
+/**/ /**/ /**/ /**/ /**/ /**/
+/**/
+/**/
+/**/ //console.log(...(   /**/ 
+/**/ //$$=$=>(~-~-$&&$$   /**/ 
+/**/ //(~-$),(_$=$_=>$%   /**/ 
+/**/ //(_[~~$_]??=$)?_$   /**/ 
+/**/ //(-~$_):_)()))((_   /**/ 
+/**/ //=[])+~_+-_+-_));   /**/ 
+/**/
+/**/
+/**/
+/**/ /**/ /**/ /**/ /**/ /**/
+
+/*let a = 1234
+a = `${a}`.split('')
+let b = 1;
+console.log(b)*/
+/*console.time('lol');
+const n = 1000//prompt('n')
+let a = 0, b = 1, c = 0;
+for(let i = 1; i <= n; i++){
+  //console.log(a,b,c)
+  c = a + b;
+  a = b
+  b = c
+};
+console.log(b);
+console.timeEnd('lol');*/
+/*console.time('sic')
+function fig(n){
+  if (n < 2) return 1;
+  return fig(n -1) + fig(n -2);
+};
+
+console.log(fig(40))
+console.timeEnd('sic')*/
