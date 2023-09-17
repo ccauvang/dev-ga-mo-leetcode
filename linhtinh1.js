@@ -367,3 +367,4 @@ function fig(n){
 
 console.log(fig(40))
 console.timeEnd('sic')*/
+
