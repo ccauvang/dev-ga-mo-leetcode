@@ -267,60 +267,21 @@ for (i of s) {
     }
   }
 }
-console.log(s2);
-//done
-*/
-/*let ob = {
-  count: 8,
-  1: '1 1 1',
-  2: '1 1 1',
-  3: '1 1 1',
-  4: '1 1 1',
-  5: '1 1 1',
-  6: '1 1 1',
-  7: '1 1 1',
-  8: '1 1 1'
-
-
+console.log(s2);*/
+let ob = {
+  count: 4,
+  1: '13 23 12',
+  2: '77 36 64',
+  3: '44 89 76',
+  4: '31 78 45'
 };
 
-let sum = 0;
-//vocolo viei xong khong hieu minh viet qq gi :))
-for (let i = 1, x = 0, y = 0; i < ob.count + 1; i++) {
-  const boo = ob[i].split(' ').map(m => Number(m))
-  const boo2 = boo.slice().sort((a, b) => a - b);
 
-  if (x == 0) {
-    if (y == 0) {
-      sum += boo2[0];
-      y = boo.indexOf(boo2[0]);
-      console.log(boo2[0],1)
-    } else {
-      if (y == boo.indexOf(boo2[0])) {
-        sum += boo2[1];
-        y = boo.indexOf(boo2[1]);
-        console.log(boo2[1],2)
-      } else {
-        sum += boo2[0];
-        y = boo.indexOf(boo2[0]);
-        console.log(boo2[0],3)
-      }
-    }
-    x++
-  } else {
-    if (y == boo.indexOf(boo2[0])) {
-      sum += boo2[1];
-      y = boo.indexOf(boo2[1]);
-      console.log(boo2[1],4)
-    } else {
-      sum += boo2[0];
-      y = boo.indexOf(boo2[0]);
-      console.log(boo2[0],5)
-    }
-    x--
-  }
 
+for (let i = 1; i < ob.count + 1; i++) {
+  let boo = ob[i].split(' ').map(m => m)
+  
+  console.log(boo)
+  
+  
 }
-console.log(sum);
-//done
-*/
