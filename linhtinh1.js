@@ -330,7 +330,8 @@ console.log(sum);
 console.log(a.slice(17, -20), -48 + a.indexOf('?si='));*/
 
 /**/
-/**/ /**/ /**/ /**/ /**/ /**/
+/**/
+/**/ /**/ /**/ /**/ /**/
 /**/
 /**/
 /**/ //console.log(...(   /**/ 
@@ -342,7 +343,8 @@ console.log(a.slice(17, -20), -48 + a.indexOf('?si='));*/
 /**/
 /**/
 /**/
-/**/ /**/ /**/ /**/ /**/ /**/
+/**/
+/**/ /**/ /**/ /**/ /**/
 
 /*let a = 1234
 a = `${a}`.split('')
@@ -366,5 +368,82 @@ function fig(n){
 };
 
 console.log(fig(40))
-console.timeEnd('sic')*/
+cơnsole.timeEnd('sic')*/
+//alert('chấp nhận đi');
+//let o = prompt('stfu');
+// Cai nay hay vcl :)))))))
+//window.location.href =  `${o}`
+
+/*setTimeout(function abc() {
+
+fetch('https://api.cauvang.tk/').then(res => res.json()).then(body => {
+  console.log(body.suffix)
+  //document.body.innerHTML += data;
+}).catch(err => console.log(err))}, 1000);*/
+
+/*function perfect_num(num) {
+  let sum = 0, bool = false;
+  for (let i = 0; i<num; i++) {
+    if (num % i == 0) sum += i
+  };
+  if (sum == num) bool = true;
+  return bool
+    
+}
+
+function friend_num(numl,numr) {
+  let suma = 0,sumb = 0;
+  if(perfect_num(numl)) return 'choi 1 minh';
+  for(let x = 0; x<numl; x++) {
+    if(numl % x == 0){
+      suma += x
+    }
+  }
+  for(let y = 0; y<numr; y++) {
+    if(numr % y == 0){
+      sumb += y
+    }
+  }
+  if(suma === numr && sumb === numl) {
+    return 'friends';
+  } else {
+    return 'not friends';
+  }
+}
+
+console.log(friend_num(5,3))
+
+console.time('l')
+
+//console.log(Math.trunc(Math.random() * 100));
+let sumx = 0, sumy = 0, sumz = 0; 
+for(let i =0; i < 1000000; i++) {
+  const a = Math.trunc(Math.random() * 284) + 1;
+  const b = Math.trunc(Math.random() * 284) + 1;
+  //console.log(friend_num(a,b),':',a,b);
+  switch (friend_num(a,b)) {
+   case 'choi 1 minh':
+     sumx++
+     //console.log(friend_num(a,b),':',a,b);
+   break;
+   
+   case 'friends':
+     sumy++
+     console.log(friend_num(a,b),':',a,b);
+   break;
+   
+   case 'not friends':
+     sumz++
+   break;
+   
+   default:
+     console.log('hai vai');
+   break;
+  }
+  
+}
+console.timeEnd('l')
+console.log(sumx,sumy,sumz);*/
+
+
 
