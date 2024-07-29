@@ -331,7 +331,10 @@ console.log(a.slice(17, -20), -48 + a.indexOf('?si='));*/
 
 /**/
 /**/
-/**/ /**/ /**/ /**/ /**/
+/**/
+/**/
+/**/
+/**/ /**/
 /**/
 /**/
 /**/ //console.log(...(   /**/ 
@@ -344,7 +347,10 @@ console.log(a.slice(17, -20), -48 + a.indexOf('?si='));*/
 /**/
 /**/
 /**/
-/**/ /**/ /**/ /**/ /**/
+/**/
+/**/
+/**/
+/**/ /**/
 
 /*let a = 1234
 a = `${a}`.split('')
@@ -381,15 +387,16 @@ fetch('https://api.cauvang.tk/').then(res => res.json()).then(body => {
   //document.body.innerHTML += data;
 }).catch(err => console.log(err))}, 1000);*/
 
-/*function perfect_num(num) {
+/*
+function perfect_num(num) {
   let sum = 0, bool = false;
   for (let i = 0; i<num; i++) {
     if (num % i == 0) sum += i
   };
   if (sum == num) bool = true;
-  return bool
+  return bool;
     
-}
+};
 
 function friend_num(numl,numr) {
   let suma = 0,sumb = 0;
@@ -397,23 +404,26 @@ function friend_num(numl,numr) {
   for(let x = 0; x<numl; x++) {
     if(numl % x == 0){
       suma += x
-    }
-  }
+    };
+  };
+  
   for(let y = 0; y<numr; y++) {
     if(numr % y == 0){
       sumb += y
-    }
-  }
+    };
+  };
+  
   if(suma === numr && sumb === numl) {
     return 'friends';
   } else {
     return 'not friends';
-  }
-}
+  };
+};
 
-console.log(friend_num(5,3))
+console.log(friend_num(220,284))*/
 
-console.time('l')
+/* 
+console.time('l');
 
 //console.log(Math.trunc(Math.random() * 100));
 let sumx = 0, sumy = 0, sumz = 0; 
@@ -445,5 +455,31 @@ for(let i =0; i < 1000000; i++) {
 console.timeEnd('l')
 console.log(sumx,sumy,sumz);*/
 
+let joi1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve(1)
+  }, 3 * 1e3)
+});
+
+let joi2 = new Promise((resolve, reject) => {
+  resolve(5)
+});
 
 
+async function lol() {
+  //async function joi1() {  };
+
+  /*async function joi2() {
+    await console.log(3);
+  };*/
+
+  const i = await joi1;
+  const k = await joi2;
+  
+  console.log(i)
+  console.log(k)
+  
+  
+};
+
+lol()
